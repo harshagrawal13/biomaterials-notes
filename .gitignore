@@ -35,3 +35,6 @@
 
 ## Build directory
 build/
+
+# custom
+.DS_Store

@@ -1,1 +1,1 @@
-These are my notes on biomaterials. Until they are completed, I'm not commiting the PDF :=)
+These are my notes on biomaterials. The PDF can be obtained from either compiling the tex files locally (or on Overleaf) or viewing a compiled version [here](https://latexonline.cc/compile?git=https://github.com/harshagrawal13/biomaterials-notes&target=main.tex&command=pdflatex)

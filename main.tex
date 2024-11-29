@@ -7,6 +7,8 @@
 \usepackage{hyperref}
 \usepackage{caption}
 \captionsetup{justification=centering}
+\usepackage{booktabs}
+\usepackage{array}
 
 \title{\Huge\centering Biomaterials Notes}
 \author{Taught by Adam Celiz \\ Notes by Harsh Agrawal}
@@ -68,7 +70,7 @@ bound to sugar and cholesterols. Key properties of the cell membrane include:
     \item \textbf{Phagocytotic Function}: The cell membrane allows for endocytosis of fluids and large particles.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{figures/chapter_1/endocytosis.png}
     \caption{Figure shows the different types of endocytosis}\label{fig:endocytosis}
@@ -87,7 +89,7 @@ bound to sugar and cholesterols. Key properties of the cell membrane include:
 \textbf{Lysosomes} are membrane-bound vesicles filled with hydrolytic enzymes (very low pH) capable of digesting a variety of macromolecules. These are also called `suicidal bags'.
 
 \subsubsection{Cytoskeleton and Motor Proteins}
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{figures/chapter_1/cytoskeleton.png}
     \caption{Structure and components of the cell cytoskeleton. Source: \url{https://shorturl.at/ZCXQS}}\label{fig:cytoskeleton}
@@ -101,7 +103,7 @@ throughout the cytoplasm of the cell. It is composed of three segments:
     \item \textbf{Intermediate Filaments}: Made up of \textbf{keratins} coiled together.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{figures/chapter_1/motor_proteins.png}
     \caption{Motor proteins and their movement along cytoskeletal filaments. Modified from \url{https://book.bionumbers.org/how-fast-do-molecular-motors-move-on-cytoskeletal-filaments/}}\label{fig:motor_proteins}
@@ -149,7 +151,7 @@ Factors affecting gene expression:
     \item \textbf{Ehlers-Danlos Syndrome}: Caused due to mutation in Collagen. Leads to hypermobile joints, stretchy skin, and fragile tissues.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{figures/chapter_1/diseases_ecm.png}
     \caption{Diseases caused by ECM abnormalities}\label{fig:diseases_ecm}
@@ -185,7 +187,7 @@ cultured till confluency.
     \item \textbf{Primary and Secondary Cell Lines}: Primary cell lines are cells that are directly taken from an organism's tissues or organs, while secondary cell lines are primary cell lines that have been sub-cultured or passaged.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{figures/chapter_1/cell_cultures.png}
     \caption{Cell Line Types}\label{fig:cell_line_types}
@@ -211,6 +213,7 @@ division capability. This type of cell line is called an \textbf{immortalized
     cell line}.
 
 \section{Metals and Ceramics}
+\subsection{Microstructure and Interatomic Bonds}
 Before we delve into the properties of metals and ceramics, let's review the
 basic concepts of interatomic forces and the differences between crystalline
 and amorphous structures. We begin by looking at the different types of bonds
@@ -246,6 +249,7 @@ transmission electron microscopy (TEM). These include:
 \end{itemize}
 
 \subsection{Metals}
+\subsubsection{Properties}
 Metals are typically crystalline in nature. They are good conductors of heat
 and electricity. Their metallic structure exhibits plastic deformation under
 load. The reason metals can bend is because they contain imperfections in the
@@ -253,7 +257,7 @@ crystal structure called \textbf{dislocations} which makes it easier for them
 to slide over a \textbf{slip plane} under shear stress. A slip plane refers to
 a specific plane along which layers of atoms can slide on.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{figures/chapter_2/slip_plane.png}
     \caption{Illustration of a slip plane in a metal crystal structure. When shear stress is applied, atomic layers can slide along these planes, resulting in plastic deformation. Source: \url{https://tinyurl.com/y2tbteyd}}\label{fig:slip_plane}
@@ -261,10 +265,148 @@ a specific plane along which layers of atoms can slide on.
 
 Lets now look into the mechanical properties of metals as described by the
 stress-strain curve:
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/chapter_2/mechanical_properties.png}
+    \caption{Stress-strain curve showing key mechanical properties of metals. The elastic region shows reversible deformation, while the plastic region shows permanent deformation.}\label{fig:mechanical_properties}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/chapter_2/fatigue_curve.png}
+    \caption{S-N (Stress vs Number of cycles) curve of the titanium alloy Ti-6Al-4V. Source: \url{https://tinyurl.com/yvy9hhkb}}\label{fig:fatigue_curve}
+\end{figure}
+
 \begin{itemize}
+    \item \textbf{Stress}: This is defined as the force per unit area ($\sigma = F/A$) applied to a material. Stress is the y-axis of the stress-strain curve.
+    \item \textbf{Strain}: This is defined as the deformation per unit length ($\epsilon = \Delta L / L$). Strain is the x-axis of the stress-strain curve.
     \item \textbf{Toughness}: Toughness is the measure of a material's ability to absorb energy before failure. It is the area under the stress-strain curve. Metals typically have high toughness.
-    \item \textbf{Ductility}: Ability to be stretched or bent without breaking.
-    \item \textbf{Elasticity}: Ability to return to original shape after stress is removed.
-    \item \textbf{Malleability}: Ability to be hammered or rolled into thin sheets.
+    \item \textbf{Ductility}: Ability to be stretched or bent without breaking. This is linked with a high plastic region. Metals with high ductility have a high plastic region and lower elastic region.
+    \item \textbf{Elasticity}: Ability to return to original shape after stress is removed. This is represented by the linear (elastic) region of the stress-strain curve.
+    \item \textbf{Tensile Strength}: The maximum stress a material can withstand before failure. Metals usually have high tensile strength.
+    \item \textbf{Yield Strength}: The stress at which a material begins to deform plastically.
+    \item \textbf{Young's Modulus}: The slope of the linear (elastic) region of the stress-strain curve. This is a measure of stiffness and is given by $E = \sigma/\epsilon$.
+    \item \textbf{Fatigue}: Refers to the progressive weakening or failure of a material under repeated or fluctuating stress cycles, even if the maximum stress is well below the material's ultimate tensile strength\footnote{Not present in the stress-strain curve}. This is quite relevant in designing heart valves and prosthetic joints. Fatigue is accumulated as repetitive loading can produce microcracks that propagate at each loading cycle. The fatigue curve is obtained by plotting the maximum stress against the number of cycles to failure as mentioned in fig.~\ref{fig:fatigue_curve}.
+\end{itemize}
+
+We can also look at the Young's Modulus values for different materials
+(including biomaterials) to estimate their relative stiffness.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        Material   & Young's Modulus (GPa) \\
+        \midrule
+        Bone       & 15--30                \\
+        Aluminum   & 69                    \\
+        CoCr Alloy & 225                   \\
+        \bottomrule
+    \end{tabular}
+    \caption{Young's Modulus values for different materials. The table highlights that bone has significantly lower stiffness than various metals.}\label{tab:youngs_modulus}
+\end{table}
+
+We can also evaluate the mechanical properties of metals in terms of its
+microstructure. The \textbf{Hall-Petch Relationship} is used to predict the
+yield strength of a material based on its grain size. It is given by:
+\begin{equation}
+    \sigma_y = \sigma_0 + k \sqrt{d^{-1}}
+\end{equation}
+where $\sigma_y$ is the yield strength, $\sigma_0$ is the intrinsic yield strength, $k$ is the Hall-Petch slope, and $d$ is the average grain diameter. The relationship highlights that as the grain size decreases, the yield strength increases. This can be explained as follows:
+\begin{itemize}
+    \item Grain boundaries act as barriers to dislocation movement. Smaller grains lead
+          to more boundaries per unit volume, which increases the resistance to plastic
+          deformation.
+    \item Dislocations pile up at grain boundaries. Smaller grains reduce the number of
+          dislocations that can accumulate, increasing the stress required for
+          deformation.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/chapter_2/alloys_types.jpeg}
+    \caption{Types of alloys: (a) Substitutional solid solution and (b) Interstitial solid solution. Source: \url{https://tinyurl.com/96ep6a4y}}\label{fig:alloy_types}
+\end{figure}
+
+\subsubsection{Alloys}
+To optimize for better mechanical properties and to overcome the limitation of
+corrosion (and oxidation), we make use of \textbf{alloys}. Allows can be made
+by two methods:
+\begin{itemize}
+    \item \textbf{Substitutional Solid Solution Alloys}: Formed by mixing two or more metals in the same crystal structure of similar size. This doesn't really disrupt the order of the crystal structure. Eg. Aluminum and Copper alloys.
+    \item \textbf{Interstitial Solid Solution Alloys}: Formed by mixing two or more metals in the same crystal structure of different size. This disrupts the order of the crystal structure. Eg. Steel (Fe \& C).
+\end{itemize}
+
+In alloys, atoms of different sizes are introduced into the host metal. These
+solute atoms distort the crystal lattice, creating local stress fields that
+interact with dislocations. The interaction increases the stress required for
+dislocations to move, effectively “stopping” them and making the alloy
+stronger. These are also called \textbf{Stopping Dislocations}.
+
+In medicine, metals are ususally used various different areas such as
+orthopaedics, oral and maxillofacial surgery, cardiovascular surgery,
+dentistry, etc. It is also used in creating Hip Prosthesis for Total Hip
+Replacement surgeries. Metals and alloys used in total hip replacement
+surgeries include:
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{4cm}}
+        \toprule
+        Material    & Applications                          & Properties                               \\
+        \midrule
+        CoCr Alloys & stem, head (ball) cup, porous coating & heavy, hard, stiff, high wear resistance \\
+        Ti Alloys   & stem, porous coating                  & low stiffness                            \\
+        Pure Ti     & porous coating                        & excellent osteointegration               \\
+        \bottomrule
+    \end{tabular}
+    \caption{Common metals and alloys used in medical applications, their typical uses, and key properties.}\label{tab:medical_metals}
+\end{table}
+
+\subsection{Ceramics}
+\subsubsection{Properties and Formation Process}
+Ceramics are solid inorganic compounds with various combinations of ionic or
+covalent bonds. They have a more complex crystal structure than metals.
+Properties of ceramics include:
+\begin{itemize}
+    \item \textbf{Hardness}: Ceramics are typically harder than metals.
+    \item \textbf{Brittleness}: Ceramics are more brittle than metals.
+    \item \textbf{Combustibility}: Ceramics are usually incombustible.
+    \item \textbf{Melting Point}: Ceramics have high melting points.\footnote{This makes them an excellent choice for heat shielding in space shuttles.}
+    \item \textbf{Corrosion Resistance}: Ceramics are resistant to corrosion.
+    \item \textbf{Electrical Conductivity}: Ceramics are poor electrical conductors.
+          % \item \textbf{Heat Resistance}: Ceramics have excellent heat resistance and don't deform in high temperature environments.
+    \item \textbf{Weight}: Ceramics are typically lighter than metals.
+    \item \textbf{Chemical Stability}: Ceramics are typically more chemically stable than metals. They do not oxidize.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/chapter_2/ceramics_microstructure.jpg}
+    \caption{Microstructure of a typical ceramic. Source: \url{https://shorturl.at/XfimY}.}\label{fig:ceramics_microstructure}
+\end{figure}
+
+The ceramic microstructure shows an aggregate of randomly oriented crytallites
+(typically less than $\sim$ 100 $\mu m$ in size) intimately bonded together to
+form a solid. As visible from fig.~\ref{fig:ceramics_microstructure}, this
+characterises two distinct features in the microstructure: distinct grain
+boundaries and the presence of pores. The grain boundaries and pores are a
+source of crack propagation.
+
+Since ceramics are quite resistant to heat and are chemically inert, they are
+processed via \textbf{sintering}. This is a process where the ceramic powder is
+heated to a high temperature (in a furnace) to fuse the particles together. Two
+sintering processes are most commonly used: fluid-flow sintering (most common)
+and solid-state sintering.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/chapter_2/sintering.jpg}
+    \caption{Illustration of the sintering process in ceramics.~\textit{Could not find a source for this image.}}\label{fig:sintering}
+\end{figure}
+
+\subsubsection{Types of Ceramics}
+On the basis of chemical composition, ceramics can be classified into:
+\begin{itemize}
+    \item \textbf{Oxide Ceramics}: Typically oxides, nitrides, carbides, etc.
+    \item \textbf{Organic Ceramics}: Typically polymers that have been modified to improve their mechanical properties.
 \end{itemize}
 \end{document}
